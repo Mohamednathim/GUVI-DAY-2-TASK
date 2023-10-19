@@ -1,0 +1,69 @@
+                           OBJECTS
+ DOCUMENT OBJECT:
+                # The DOCUMENT OBJECT represents your web pages.
+                # If you want to any element in an HTML page,you always start with accessing the document object.
+  FINDING ELEMENTS:
+         1.Find an element by element id:
+            document.hetElementById(id) 
+         2.Find element by tag name:
+            document.getElementsByTagName(name)   
+         3.Find elements by class name:
+            document.getElementsByclassName(name) 
+  CHANGING ELEMENTS:
+         1.Cange the inner HTML of an element:
+             element.innerHTML=new html content
+         2.Change the attribute value of an HTML element:
+             element.attribute=new value
+         3.Change the style of an HTML element:
+             element.style.property=new style
+  ADDING AND DELETING ELEMENTS:
+         1.Create:
+                 document.createElement(element) 
+         2.Remove:
+                 docunent.removeChild(element)           
+         3.Add:
+                 document.appendChild(element)
+         4.Replace:
+                  document.replaceChild(new,old)
+         5.Write:
+                  document.write(text)
+  FINDING OBJECTS:
+          document.anchors ==> Returns all<a> elements that have a name attribute
+          document.baseURI ==> Returns the absolute base URI of the element
+          document.cookie  ==> Returns the document's doctype
+          document.documentElement ==> Returns the <html> element
+          document.domain ==> Returns the domain name of the document server
+          document,forms ==> Returns the <form> elements.
+          document.head ==.Returns the <head> elements
+          document.images ==>Returns all <img> elements
+          document.scripts ==>Returns all <script> element
+    
+WINDOW OBJECT:
+            # The window object represents an open window in a browser.
+            # If a document contain frames,the browsers create one window objects fot the HTML document and one additional window objects for each frame.
+   PROPERTIES:
+          closed => Returs a boolean true ifa window is closed
+          console => Returs the console object for the window.
+          document => Returns the document object fot the window
+          frameElement => Returns the frame in which the window runs
+          frames => Returns all window objects running in the window.
+          history => Returns the history object for the window
+          length => Returns the number of elements in the current window
+          location => Returns the location object for the window.
+          name => Sets the name of the window
+          screen => Returns the screen object for the window     
+          parent =>Returns the parent window of the current window.
+          self => Returns the current window
+          top => Returns the topmost browser window
+  METHODS:
+          addEventListener(). => Attaches n event handler to the window
+          alert(). => Displays an alert box with a message and an OK button
+          clearTimeout(). => Clears a timer set with setTimeout()  
+          close(). => Closes the current window
+          confirm(). => Displays a dialog box with a message and an OK and a Cancel button
+          focus(). => Sets focus to the current window
+          open(). => Opens a new browser window
+          print(). => Prints the content of the current window
+          prompt(). => Displays a dialog box that prompts the visitor for input
+          scroll(). => Replaced by scrollTo method
+          stop(). => Stops the window from loading
